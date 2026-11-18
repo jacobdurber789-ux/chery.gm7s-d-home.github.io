@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8dce8">
+  <meta name="description" content="Cherry Hub — a blossom-themed games and entertainment hub.">
+  <title>Cherry Hub 🍒</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Cherry Hub home"><span class="brand-icon">🍒</span><span>cherry<span class="brand-light">hub</span></span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a class="active" href="#games">Games</a><a href="#watch">Watch</a><a href="#about">About</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="sparkle">✦</span> YOUR LITTLE CORNER OF THE INTERNET</div>
+        <h1>Take a break.<br><em>Stay a while.</em></h1>
+        <p class="hero-text">A cosy place for games, videos and a little cherry-blossom magic.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#games">Explore games <span>↗</span></a><a class="text-link" href="#watch">Find something to watch</a></div>
+      </div>
+      <div class="tree-scene" aria-label="Illustration of a cherry blossom tree">
+        <div class="sun"></div><div class="hill hill-back"></div><div class="hill hill-front"></div>
+        <svg class="tree" viewBox="0 0 520 490" role="img" aria-label="Pink cherry blossom tree">
+          <path class="trunk" d="M252 470 C235 399 273 347 251 291 C231 242 182 224 154 173 M250 315 C292 270 310 220 302 158 M246 355 C198 319 148 311 104 275 M286 246 C337 216 368 177 382 132 M239 286 C208 252 205 206 215 165"/>
+          <path class="branch" d="M154 173 C126 143 111 117 110 85 M302 158 C324 121 327 93 321 62 M104 275 C76 252 57 226 54 198 M382 132 C408 105 416 78 411 53 M215 165 C199 128 199 99 211 72"/>
+          <g class="blossoms">
+            <circle cx="108" cy="81" r="48"/><circle cx="158" cy="113" r="54"/><circle cx="210" cy="72" r="51"/>
+            <circle cx="265" cy="102" r="65"/><circle cx="323" cy="61" r="48"/><circle cx="378" cy="115" r="61"/>
+            <circle cx="419" cy="52" r="40"/><circle cx="72" cy="196" r="48"/><circle cx="121" cy="236" r="55"/>
+            <circle cx="183" cy="190" r="55"/><circle cx="302" cy="173" r="59"/><circle cx="357" cy="207" r="51"/>
+            <circle cx="420" cy="173" r="43"/><circle cx="246" cy="232" r="56"/><circle cx="165" cy="299" r="40"/>
+          </g>
+          <g class="petals"><circle cx="93" cy="65" r="5"/><circle cx="177" cy="91" r="4"/><circle cx="235" cy="56" r="5"/><circle cx="292" cy="112" r="4"/><circle cx="345" cy="45" r="5"/><circle cx="395" cy="93" r="4"/><circle cx="63" cy="181" r="5"/><circle cx="140" cy="213" r="4"/><circle cx="202" cy="176" r="5"/><circle cx="328" cy="156" r="4"/><circle cx="389" cy="192" r="5"/></g>
+        </svg>
+        <div class="scene-caption">a little bit of lovely 🌸</div>
+      </div>
+      <div class="hero-bottom"><span>✿ BLOOM INTO SOMETHING FUN</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="section" id="games">
+      <div class="section-heading">
+        <div><div class="eyebrow">PICK YOUR PLAYGROUND</div><h2>Game garden<span class="pink-dot">.</span></h2><p>Quick favourites for your next little break.</p></div>
+        <div class="game-count"><strong id="gameCount">12</strong><span>GAMES TO EXPLORE</span></div>
+      </div>
+      <div class="game-toolbar">
+        <label class="search-box"><span>⌕</span><input id="gameSearch" type="search" placeholder="Search games..." aria-label="Search games"></label>
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="All">All</button><button class="filter" data-filter="Puzzle">Puzzle</button><button class="filter" data-filter="Arcade">Arcade</button><button class="filter" data-filter="Chill">Chill</button><button class="filter" data-filter="Strategy">Strategy</button>
+        </div>
+      </div>
+      <div class="game-grid" id="gameGrid">
+        <a class="game-card" data-category="Puzzle" data-name="2048" href="https://play2048.co/" target="_blank" rel="noopener"><span class="game-art art-peach">2048</span><span class="game-info"><strong>2048</strong><small>Merge your way up</small><i>PUZZLE ↗</i></span></a>
+        <a class="game-card" data-category="Arcade" data-name="slither io" href="https://slither.io/" target="_blank" rel="noopener"><span class="game-art art-lime">🐍</span><span class="game-info"><strong>Slither.io</strong><small>Grow your little snake</small><i>ARCADE ↗</i></span></a>
+        <a class="game-card" data-category="Puzzle" data-name="little alchemy 2" href="https://littlealchemy2.com/" target="_blank" rel="noopener"><span class="game-art art-lilac">⚗️</span><span class="game-info"><strong>Little Alchemy 2</strong><small>Discover new things</small><i>PUZZLE ↗</i></span></a>
+        <a class="game-card" data-category="Chill" data-name="cookie clicker" href="https://orteil.dashnet.org/cookieclicker/" target="_blank" rel="noopener"><span class="game-art art-cream">🍪</span><span class="game-info"><strong>Cookie Clicker</strong><small>A sweet idle game</small><i>CHILL ↗</i></span></a>
+        <a class="game-card" data-category="Arcade" data-name="google doodle games" href="https://www.google.com/doodles" target="_blank" rel="noopener"><span class="game-art art-sky">🎈</span><span class="game-info"><strong>Google Doodles</strong><small>Fun little surprises</small><i>ARCADE ↗</i></span></a>
+        <a class="game-card" data-category="Strategy" data-name="chess" href="https://www.chess.com/play/online" target="_blank" rel="noopener"><span class="game-art art-sage">♟</span><span class="game-info"><strong>Chess</strong><small>Make your next move</small><i>STRATEGY ↗</i></span></a>
+        <a class="game-card" data-category="Puzzle" data-name="wordle" href="https://www.nytimes.com/games/wordle/index.html" target="_blank" rel="noopener"><span class="game-art art-mint">W</span><span class="game-info"><strong>Wordle</strong><small>Guess the hidden word</small><i>PUZZLE ↗</i></span></a>
+        <a class="game-card" data-category="Arcade" data-name="agar io" href="https://agar.io/" target="_blank" rel="noopener"><span class="game-art art-blue">🔵</span><span class="game-info"><strong>Agar.io</strong><small>Grow and explore</small><i>ARCADE ↗</i></span></a>
+        <a class="game-card" data-category="Chill" data-name="neal fun" href="https://neal.fun/" target="_blank" rel="noopener"><span class="game-art art-pink">✿</span><span class="game-info"><strong>Neal.fun</strong><small>Curious web experiments</small><i>CHILL ↗</i></span></a>
+        <a class="game-card" data-category="Puzzle" data-name=" mahjong" href="https://www.247mahjong.com/" target="_blank" rel="noopener"><span class="game-art art-gold">🀄</span><span class="game-info"><strong>Mahjong</strong><small>Match the tiles</small><i>PUZZLE ↗</i></span></a>
+        <a class="game-card" data-category="Strategy" data-name="geoguessr" href="https://www.geoguessr.com/" target="_blank" rel="noopener"><span class="game-art art-map">🌍</span><span class="game-info"><strong>GeoGuessr</strong><small>Where in the world?</small><i>STRATEGY ↗</i></span></a>
+        <a class="game-card" data-category="Arcade" data-name="crazy games" href="https://www.crazygames.com/" target="_blank" rel="noopener"><span class="game-art art-violet">🎮</span><span class="game-info"><strong>CrazyGames</strong><small>A whole arcade to browse</small><i>ARCADE ↗</i></span></a>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>No games found. Try another search 🌸</p>
+    </section>
+
+    <section class="watch-section" id="watch">
+      <div class="section-heading watch-heading"><div><div class="eyebrow">YOUR SCREEN, YOUR CHOICE</div><h2>Watch & explore<span class="pink-dot">.</span></h2><p>Jump into your favourite entertainment spots.</p></div></div>
+      <div class="watch-grid">
+        <a class="watch-card youtube" href="https://www.youtube.com/" target="_blank" rel="noopener"><span class="watch-icon">▶</span><span><strong>YouTube</strong><small>Videos, music & creators</small></span><b>↗</b></a>
+        <a class="watch-card prime" href="https://www.primevideo.com/" target="_blank" rel="noopener"><span class="watch-icon">prime</span><span><strong>Prime Video</strong><small>Films & series</small></span><b>↗</b></a>
+        <a class="watch-card tiktok" href="https://www.tiktok.com/" target="_blank" rel="noopener"><span class="watch-icon">♪</span><span><strong>TikTok</strong><small>Short videos & trends</small></span><b>↗</b></a>
+      </div>
+      <p class="fine-print">These buttons open the official services in a new tab. You may need an account or subscription for some content.</p>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-flower">✿</div><div><div class="eyebrow">MADE FOR LITTLE BREAKS</div><h2>Stay curious.<br><em>Keep blooming.</em></h2></div>
+      <p>Cherry Hub is a simple home page for games and entertainment. Save it, customise it, and make it yours.</p>
+    </section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-icon">🍒</span><span>cherry<span class="brand-light">hub</span></span></a><span>Made with a little blossom magic <b>✿</b></span><a href="#top" class="back-top">BACK TO TOP ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
